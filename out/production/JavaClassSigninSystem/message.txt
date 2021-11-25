@@ -1,0 +1,3 @@
+message information between Server and Client:
+Client 2 Server:
+201: prepare to receive user's username and password

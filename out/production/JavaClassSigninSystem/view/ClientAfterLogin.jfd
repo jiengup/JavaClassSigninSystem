@@ -1,0 +1,126 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::241:x, comp haad_img:::p:359:p, space :p:233:p}, seq {space :p:353:p, comp label3:::p::p, space ::363:x}, seq l {par l {seq {space :p:33:p, par l {seq l {comp checkBox1:::p::p, space s:::p, comp logoutButton:::p::p}, par t:l {comp label2:::p::p, par l {seq l {space :p:3:p, comp welcome_lb1:::p::p, space :::p, comp welcome_lb2:::p::p}, seq l {comp content_lb7:::p::p, space :::p, comp content_lb8:::p::p, space :::p, comp submitButton:::p::p}, seq l {comp content_lb2:::p::p, space :::p, comp content_lb4:::p::p, space :::p, comp content_lb5:::p::p}, comp content_lb1::l:p::p, comp content_lb3::l:p::p}}}, space ::87:x}, seq t {space :0:41:x, comp fileSendStatu:::p:33:p, space u:::p, comp fileSendMessage:::p:307:p, space :p:79:p}}, par l {comp scrollPane1:::p:329:p, comp content_lb9:::p::p}, space :p:32:p}}"
+			"$verticalGroup": "par l {seq l {comp haad_img:::p::p, space ::12:x, par t:::p {seq t {par b {comp welcome_lb1::b:p::p, comp welcome_lb2::b:p::p}, space :p:24:p, comp content_lb1:::p::p, space u:::p, par b {comp content_lb2::b:p::p, comp content_lb4::b:p::p, comp content_lb5::b:p::p}, space s:::p, comp content_lb3:::p::p, space :p:32:p, par t {comp content_lb7:::p::p, par l:t::p {comp submitButton:::::x, comp content_lb8:::p:38:p}}, space :::p, comp label2:::p::p, space :p:32:p, par l {comp fileSendStatu:::::x, seq {comp fileSendMessage:::p:25:p, space :0:0:x}}, space ::48:x, par b {comp checkBox1::b:p::p, comp logoutButton::b:p:48:p}}, seq t {comp content_lb9:::p::p, space :::p, comp scrollPane1:::p:344:p}}, space :p:48:p, comp label3:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Client"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"resizable": false
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "haad_img"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resource/head.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "welcome_lb1"
+				"text": "Welcome, "
+				"font": &Font0 new java.awt.Font( "MathJax_Typewriter", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "welcome_lb2"
+				"font": #Font0
+				"text": "Jengup"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "submitButton"
+				"text": "Submit"
+				"toolTipText": "select a file"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "submitButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb1"
+				"font": #Font0
+				"text": "You hava signup successfully!"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb2"
+				"font": #Font0
+				"text": "This is your"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb3"
+				"font": #Font0
+				"text": "From now on, hand on your task!"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb4"
+				"font": new java.awt.Font( "MathJax_Typewriter", 3, 20 )
+				"text": "3rd "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb5"
+				"font": #Font0
+				"text": "Java Class"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb8"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/resource/arrow.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb6"
+				"font": #Font0
+				"text": "If you compete:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb7"
+				"font": new java.awt.Font( "MathJax_Typewriter", 0, 23 )
+				"text": "If you have competed"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "(Please select sigle file, if you have muiti-files, compress them.)"
+				"foreground": sfield java.awt.Color darkGray
+				"font": new java.awt.Font( "DejaVu Sans", 2, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logoutButton"
+				"text": "Log Out"
+				"background": sfield java.awt.Color red
+				"foreground": sfield java.awt.Color red
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "logoutButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Powered By javax.Swing"
+				"foreground": sfield java.awt.Color gray
+				"font": new java.awt.Font( "DejaVu Sans", 2, 10 )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "I'm sure I have submitted all the tasks"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox1ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+					"editable": false
+					"text": "请尽快完成实验"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "content_lb9"
+				"font": #Font0
+				"text": "Message from teacher"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fileSendMessage"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fileSendStatu"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 60, 35 )
+			"size": new java.awt.Dimension( 835, 610 )
+		} )
+	}
+}
